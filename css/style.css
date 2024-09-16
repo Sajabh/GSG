@@ -1,0 +1,134 @@
+:root {
+  --primaryColor: #8a5e26bf;
+  --secondaryColor: #4c3320dc;
+  --lightColor: #d7e7a0;
+  --bgColor: #a37370;
+  --bgColor2: #f9c8c2;
+  --padding: 8%;
+  --shadw: #635e5e;
+  --bodycolor: rgb(250, 234, 214);
+}
+* {
+  max-width: 100%;
+}
+html{
+  scroll-behavior: smooth;
+  }
+body {
+  background-color: antiquewhite;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: var(--bgColor);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 20px var(--shadw);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  z-index: 100;
+}
+/* Nav */
+nav ul {
+  justify-content: space-around;
+  display: flex;
+  list-style: none;
+  margin: 0 50px 0px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--lightColor);
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+nav a:hover {
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgb(97, 93, 93);
+  background-color: var(--primaryColor);
+  transition: 0.3s;
+}
+/* Sections */
+section {
+  margin: 30px;
+  box-shadow: 1px 1px 50px rgb(227, 220, 220);
+  padding: 20px;
+}
+hr {
+  /* color: #a37370;
+    opacity: 20%;*/
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  font-family: fangsong;
+  font-size: 30px;
+}
+h4 {
+  font-family: fangsong;
+  text-shadow: 1px 1px 7px #080303;
+  font-size: 20px;
+}
+section:hover {
+  padding: 40px;
+  transition: 0.35s;
+}
+
+section li {
+  justify-content: space-around;
+  display: flex;
+}
+section li li:hover {
+  border: 4px double rgb(128, 128, 128, 0);
+}
+section li li:hover {
+  border: 4px double gray;
+}
+section li {
+  background-color: hsla(315, 20%, 63%, 0.2);
+  margin: 10px;
+  padding: 20px;
+  list-style: none;
+  border-radius: 20px 90px;
+}
+section ul {
+  font-size: 30px;
+}
+/*Footer*/
+footer {
+  background-color: var(--bgColor);
+  padding: 40px;
+}
+
+
+footer a {
+  text-decoration: none;
+  color: var(--lightColor);
+  padding: 15px;
+  background-color: #b38d8b;
+  border-radius: 59px;
+}
+footer a:hover{
+  box-shadow: 0px 0px 13px;
+}
+a#up{
+  font-size: 15px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  background-color: var(--bgColor);
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--bgColor2);
+  opacity: 80%;
+  width: 6px;
+  height: 6px;
+  text-align: center;
+  line-height: 6px;
+}
